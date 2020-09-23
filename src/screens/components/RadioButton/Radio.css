@@ -1,0 +1,53 @@
+.Radio-component {
+  margin: 88px 324px;
+  font-family: IRANSans;
+  font-size: 16px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  height: 600px;
+}
+
+.head {
+  /* margin-bottom: 64px; */
+  margin: 42px 32px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: IRANSans;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center ;
+  font-family: IRANSans;
+  font-size: 20px;
+
+}
+
+.one {
+  color: green;
+}
+
+.two {
+  color: black;
+}
+
+.three {
+  color: #ff5722;
+}
+
+.four {
+  color: #e91e63;
+}
+
+.ccc {
+  display: flex;
+  flex: center;
+  /* background-color: red; */
+}

@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import RadioButton from './Screen/RadioButton'
 import './assets/css/fontiran.css'
+import RadioButton from './screens/components/RadioButton/RadioButton'
+import Profile from './screens/components/profile/profile'
+// import Profile from './screens/components/testscss/profile'
 
 ReactDOM.render(
   <React.StrictMode>
-    <RadioButton />
+    <Profile />
   </React.StrictMode>,
   document.getElementById('root')
 );

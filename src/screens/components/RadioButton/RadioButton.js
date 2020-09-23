@@ -5,7 +5,7 @@ import JBCheckbox from 'jb-checkbox-react';
 
 export default function RadioButton() {
     const [ input , setInput ] = useState ('ALL');
-        function func ( type , value ){
+        function func ( type , value ) {
             if ( value === true ) {
             // className='highlight'
             setInput ( type )
@@ -14,7 +14,7 @@ export default function RadioButton() {
 
     return (
 
-    <div className='root'>
+    <div className='Radio-component'>
 
         <div dir='rtl' className='head'> <h3>فعالیت‌های من</h3> </div>
 

@@ -1,0 +1,56 @@
+.profile-component {
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 42px 32px;
+}
+
+.imgavatar {
+    width: 16%;
+}
+
+.imgexpand {
+    width: 20px;
+    height: 20px;
+}
+
+.user {
+    font-family: IRANSans;
+}
+
+.menu {
+    background-color: #e0e0e0;
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    top: 60px;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1;
+    margin-right: 160px;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    font-family: IRANSans;
+    font-size: 14px;
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 4px;
+}
+
+.divavatar {
+    /* width: 20%; */
+}
+
+.divuser {
+    width: 20%;
+}
+
+.divexpand {
+    width: 10%;
+}
