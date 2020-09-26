@@ -7,11 +7,12 @@ import './assets/css/fontiran.css'
 import RadioButton from './screens/components/RadioButton/RadioButton'
 import Radio from './screens/components/RadioButton/Radio'
 import Profile from './screens/components/profile/profile'
+import Data from './screens/components/RadioButton/Data'
 // import Profile from './screens/components/testscss/profile'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Radio a='aaaa' />
+    <Radio Data={Data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
