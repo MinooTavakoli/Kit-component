@@ -22,18 +22,21 @@
             font-family: IRANSans;
             font-size: 20px;
           }
-            .one {
-              color: green;
-            }
-            .two {
+          .title-all {
               color: black;
-            }
-            .three {
+          }
+          .title-create {
+              color: green;
+          }
+          .title-edit {
+              color: black;
+          }
+          .title-confirm {
               color: #ff5722;
-            } 
-            .four {
+          } 
+          .title-delete {
               color: #e91e63;
-            }
+          }
       }
 }
 
