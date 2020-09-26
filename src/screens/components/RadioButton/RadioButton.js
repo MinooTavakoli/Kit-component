@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import'./Radio.scss'
 import 'jb-checkbox-react';
 import JBCheckbox from 'jb-checkbox-react';
 
 export default function RadioButton() {
-    const [ input , setInput ] = useState ('ALL');
+    const [ input , setInput ] = useState ('');
+
+        useEffect(() => {
+            console.log (input)
+        }, [input])
+
         function func ( type , value ) {
             if ( value === true ) {
             // className='highlight'
