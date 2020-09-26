@@ -19,6 +19,7 @@ export default function RadioButton() {
         <div dir='rtl' className='header-subject'> <h3>فعالیت‌های من</h3> </div>
 
             <div dir='rtl' className='checkbox' >
+            
                 <div className='title-all'>
                     <JBCheckbox label='کل فعالیت‌ها' value={input==="ALL"} onChange={e => {func('ALL' , e.target.value);}}> </JBCheckbox>
                     <h3 className='number'>215</h3>
