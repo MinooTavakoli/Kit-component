@@ -5,12 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/css/fontiran.css'
 import RadioButton from './screens/components/RadioButton/RadioButton'
+import Radio from './screens/components/RadioButton/Radio'
 import Profile from './screens/components/profile/profile'
+import Data from './screens/components/RadioButton/Data'
 // import Profile from './screens/components/testscss/profile'
 
 ReactDOM.render(
   <React.StrictMode>
-    <RadioButton />
+    <Radio Data={Data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
