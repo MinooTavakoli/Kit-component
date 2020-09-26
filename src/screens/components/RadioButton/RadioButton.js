@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import'./Radio.scss'
 import 'jb-checkbox-react';
 import JBCheckbox from 'jb-checkbox-react';

@@ -14,26 +14,26 @@
         flex-direction: row;
         justify-content: space-around;
         font-family: IRANSans;
-          .one {
-            color: green;
+          .number {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center ;
+            font-family: IRANSans;
+            font-size: 20px;
           }
-          .two {
-            color: black;
-              .number {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                justify-content: center ;
-                font-family: IRANSans;
-                font-size: 20px;
-              }
-          }
-          .three {
-            color: #ff5722;
-          } 
-          .four {
-            color: #e91e63;
-          }
+            .one {
+              color: green;
+            }
+            .two {
+              color: black;
+            }
+            .three {
+              color: #ff5722;
+            } 
+            .four {
+              color: #e91e63;
+            }
       }
 }
 

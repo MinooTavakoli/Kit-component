@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './profile.scss'
 import avatar from '../../../assets/images/avatarperson.png'
 import expandicon from '../../../assets/images/expandicon.png'

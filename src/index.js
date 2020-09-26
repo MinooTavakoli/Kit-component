@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './assets/css/fontiran.css'
 import RadioButton from './screens/components/RadioButton/RadioButton'
-import Profinple from './screens/components/profile/profile'
+import Profile from './screens/components/profile/profile'
 // import Profile from './screens/components/testscss/profile'
 
 ReactDOM.render(
