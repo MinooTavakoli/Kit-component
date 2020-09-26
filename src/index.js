@@ -10,7 +10,7 @@ import Profinple from './screens/components/profile/profile'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
+    <RadioButton />
   </React.StrictMode>,
   document.getElementById('root')
 );

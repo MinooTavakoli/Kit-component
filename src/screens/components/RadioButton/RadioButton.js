@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import'./Radio.css'
+import'./Radio.scss'
 import 'jb-checkbox-react';
 import JBCheckbox from 'jb-checkbox-react';
 
@@ -14,9 +14,9 @@ export default function RadioButton() {
 
     return (
 
-    <div className='Radio-component'>
+    <div className='header-radio-component'>
 
-        <div dir='rtl' className='head'> <h3>فعالیت‌های من</h3> </div>
+        <div dir='rtl' className='header-subject'> <h3>فعالیت‌های من</h3> </div>
 
             <div dir='rtl' className='checkbox' >
                 <div className='two'>

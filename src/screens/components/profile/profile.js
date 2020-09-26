@@ -1,34 +1,32 @@
 import React, {useState} from 'react'
-import './profile.css'
+import './profile.scss'
 import avatar from '../../../assets/images/avatarperson.png'
 import expandicon from '../../../assets/images/expandicon.png'
 
 export default function profile() {
 
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [open , setOpen] = useState (false);
+    const [isOpen , setIsOpen] = useState (false);
 
     return (
-        <div className='profile-component'>
+        <div className='header-profile-component'>
 
-        <div className='divexpand'>
-            <img className='imgexpand' src={expandicon} alt="" onClick={()=>{setOpen(!open)}} aria-role="open Menu"/>
-        </div>
+            <div className='arrow-image-wrapper'>
+                <img className='arrow-image' src={expandicon} alt="" onClick={()=>{setIsOpen(!isOpen)}} aria-role="open Menu"/>
+            </div>
 
-        <div className='divuser'>
-            <h4 className='user'>014 کاربر</h4>
-        </div>
-        
-        <div className='divavatar'>
-            <img className='imgavatar' src={avatar} alt="" />
-        </div>
-        
-            {open ? (
-                <div className='menu'  >
-                    <button className='button'>خروج</button>
-                </div>
-            ): null}
-    
+            <div className='user-name'>
+                014 کاربر
+            </div>
+            
+            <div className='user-image-wrapper'>
+                <img className='user-image' src={avatar} alt="" />
+            </div>
+            
+            <div className={'user-exit '+(isOpen?'':'--hide')}  >
+                <button className='button-exit'>خروج</button>
+            </div>
+
         </div>
     )
 }

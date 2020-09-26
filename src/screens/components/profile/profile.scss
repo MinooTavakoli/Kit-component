@@ -1,0 +1,56 @@
+$background-color: #e0e0e0;
+// @include border-radius (4px);
+@mixin Test {
+    width: 350px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 42px 32px;
+}
+
+.header-profile-component {
+    @include Test;
+    .arrow-image-wrapper {
+        width: 10%;
+    }
+    .user-image {
+        width: 16%;
+    }
+    .arrow-image {
+        width: 20px;
+        height: 20px;
+    }
+    .user-exit {
+        background-color: $background-color;
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        top: 60px;
+        border-radius: 4px;
+        padding: 10px;
+        z-index: 1;
+        margin-right: 160px;
+        display: block;
+        &.--hide {
+            display: none;
+        }
+        .button-exit {
+            width: 200px;
+            height: 40px;
+            font-family: IRANSans;
+            font-size: 14px;
+            background-color: #fafafa;
+            border: 1px solid #fafafa;
+            border-radius: 4px;
+        }
+    }
+    .user-image-wrapper {
+        /* width: 20%; */
+    }
+    .user-name {
+        width: 20%;
+        font-family: IRANSans;
+    }
+}
