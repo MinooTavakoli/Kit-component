@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import'./Radio.scss'
 import 'jb-checkbox-react';
 import JBCheckbox from 'jb-checkbox-react';
+import Data from './Data'
 
-export default function RadioButton() {
+export default function RadioButton(props) {
 
     const [ selectedValue , setSelectedValue ] = useState ('');
 
@@ -13,42 +14,10 @@ export default function RadioButton() {
         }
     }
 
-    const Data = [
-        {
-            key: 'All1',
-            text: 'کل فعالیت‌ها',
-            count: 215,
-            color: "#202124"
-        },
-        {
-            key: 'CREATED',
-            text: 'محتوای ایجاد شده',
-            count: 126,
-            color: "#15aa56"
-        },
-        {
-            key: 'EDITED',
-            text: 'محتوای ویرایش شده',
-            count: 45,
-            color: "#202124"
-        },
-        {
-            key: 'CONFIRMED',
-            text: 'محتوای تایید شده',
-            count: 32,
-            color: "#e96710"
-        },
-        {
-            key: 'DELETED',
-            text: 'محتوای حذف شده',
-            count: 12,
-            color: "#f10e4c"
-        },
-    ]
     return (
 
     <div className='header-radio-component'>
-
+            {props.a}
         <div dir='rtl' className='header-subject'> <h3>فعالیت‌های من</h3> </div>
 
             <div dir='rtl' className='checkbox' >
