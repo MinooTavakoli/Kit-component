@@ -8,11 +8,13 @@ import RadioButton from './screens/components/RadioButton/RadioButton'
 import Radio from './screens/components/RadioButton/Radio'
 import Profile from './screens/components/profile/profile'
 import Data from './screens/components/RadioButton/Data'
+import Myactivity from './screens/components/RadioButton/my-activity'
 // import Profile from './screens/components/testscss/profile'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Radio Data={Data} />
+    <Myactivity />
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

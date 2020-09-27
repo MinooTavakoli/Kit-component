@@ -33,7 +33,7 @@ export default function RadioButton() {
                 <div className='title-create'>
                     <JBCheckbox label='محتوای ایجاد شده' value={input==="CREATED"} onChange={e => {func('CREATED' , e.target.value);}}> </JBCheckbox>
                     <h3 className='number'>126</h3>
-                </div>
+                </div> 
 
                 <div className='title-edit'>
                     <JBCheckbox label='محتوای ویرایش شده' value={input==="EDITED"} onChange={e => {func('EDITED' , e.target.value);}}> </JBCheckbox>
