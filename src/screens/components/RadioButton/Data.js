@@ -1,7 +1,7 @@
 
 const Data = [
         {
-            key: 'All1',
+            key: 'All',
             text: 'کل فعالیت‌ها',
             count: 215,
             color: "#202124"
