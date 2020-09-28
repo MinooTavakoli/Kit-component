@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Radio from './Radio'
-import Data from './Data'
+import Data from '../My-Activity/Data-Activity'
 
 export default function MyActivity (props) {
     

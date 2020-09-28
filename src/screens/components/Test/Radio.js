@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import'./Radio.scss'
 import 'jb-checkbox-react';
 import JBCheckbox from 'jb-checkbox-react';
-import Myactivity from './my-activity'
+import Myactivity from './activity'
+import Data from '../My-Activity/Data-Activity';
 
 export default function RadioButton(props) {
 
