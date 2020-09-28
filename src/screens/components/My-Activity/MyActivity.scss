@@ -1,0 +1,29 @@
+.page-container {
+    background-color: #f6f8fa;
+    width: 100%;
+    position: absolute;
+      .my-activity-component {
+        margin: 62px 254px ;
+        height: 100vh;
+        font-family: IRANSans;
+        font-size: 16px;
+        padding-left: 64px;
+        background-color: #ffffff;
+          .my-activity-selector {
+            font-size: 16px ;
+            padding-top: 36px;
+            padding-right: 32px;
+            margin-bottom: 50px;
+            color: #202124;
+          }
+          .activity-item {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-right: 16px;
+            font-family: IRANSans;
+          }
+        }
+      }
+    
