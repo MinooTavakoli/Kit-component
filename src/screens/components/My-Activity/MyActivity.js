@@ -15,7 +15,7 @@ export default function RadioButton(props) {
         <div dir='rtl' className='page-container'>
             <div className='my-activity-component'>
                 <div dir='rtl' className='my-activity-selector'>
-                    <h3>فعالیت‌های من</h3>
+                    فعالیت‌های من
                 </div>
                     <div dir='rtl' className='activity-item'>
                         {props.Data.map ((item) => {
@@ -31,6 +31,5 @@ export default function RadioButton(props) {
                     </div> 
             </div>
         </div>
- 
     )
 }
