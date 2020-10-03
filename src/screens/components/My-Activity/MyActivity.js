@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './MyActivity.scss'
 import ActivityItem from './activity-item/ActivityItem'
 
-export default function RadioButton(props) {
+export default function MyActivity(props) {
     const [ selectedValue , setSelectedValue ] = useState ('');
     
     function onChange(key , newValue){

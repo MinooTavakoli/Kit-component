@@ -7,10 +7,11 @@ import './assets/css/fontiran.css'
 import MyActivity from './screens/components/My-Activity/MyActivity'
 import Profile from './screens/components/profile/profile'
 import Data from './screens/components/My-Activity/Data-Activity'
+import Mobx from './screens/components/mobx/mobx'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile Data={Data} />
+    <MyActivity Data={Data} />
   </React.StrictMode>,
   document.getElementById('root')
 );

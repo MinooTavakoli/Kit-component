@@ -2,7 +2,7 @@ import React from 'react'
 import './ActivityItem.scss'
 import RadioComponent from '../radio-button/RadioComponent'
 
-export default function titleComponent(props) {
+export default function ActivityItem(props) {
 
     return (
             <div dir='rtl' className='title-wrapper'>
