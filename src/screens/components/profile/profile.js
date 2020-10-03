@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './profile.scss'
-import avatar from '../../../assets/images/avatarperson.png'
-import expandicon from '../../../assets/images/expandicon.png'
+import avatar from '../../../assets/images/avatar.svg'
+import avatarperson from '../../../assets/images/avatarperson.png'
+import open from '../../../assets/images/open.svg'
 
 export default function profile() {
 
@@ -12,7 +13,7 @@ export default function profile() {
         <div className='header-profile-component'>
 
             <div className='arrow-image-wrapper'>
-                <img className='arrow-image' src={expandicon} alt="" onClick={()=>{setIsOpen(!isOpen)}} aria-role="open Menu"/>
+                <img className='arrow-image' src={open} alt="" onClick={()=>{setIsOpen(!isOpen)}} aria-role="open Menu"/>
             </div>
 
             <div className='user-name'>
@@ -20,7 +21,7 @@ export default function profile() {
             </div>
             
             <div className='user-image-wrapper'>
-                <img className='user-image' src={avatar} alt="" />
+                <img className='user-image' src={avatarperson} alt="" />
             </div>
             
             <div className={'user-exit '+(isOpen?'':'--hide')}  >

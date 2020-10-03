@@ -10,7 +10,7 @@ import Data from './screens/components/My-Activity/Data-Activity'
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyActivity Data={Data} />
+    <Profile Data={Data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
