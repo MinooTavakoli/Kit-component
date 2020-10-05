@@ -8,10 +8,9 @@ import MyActivity from './screens/components/My-Activity/MyActivity'
 import Profile from './screens/components/profile/profile'
 import Data from './screens/components/My-Activity/Data-Activity'
 import Login from './screens/components/login/login'
+import CssGrid from './screens/components/CssGrid/cssGrid'
 ReactDOM.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>,
+    <CssGrid />,
   document.getElementById('root')
 );
 

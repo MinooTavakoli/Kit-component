@@ -1,6 +1,25 @@
-import {observable} from 'mobx'
+import { observable, action, makeObservable } from "mobx";
 
 class LoginStore{
-@observable username = '2'
+
+    
+@observable
+username = '';
+
+constructor() {
+    makeObservable(this);
 }
-export const loginStore = new LoginStore()
+
+@action
+updateUsername = (newValue) => {
+    // debugger;
+    this.username = newValue;
+}
+@action
+onLogin(){
+
+}
+
+}
+
+export default LoginStore;
