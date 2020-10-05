@@ -9,8 +9,11 @@ import Profile from './screens/components/profile/profile'
 import Data from './screens/components/My-Activity/Data-Activity'
 import Login from './screens/components/login/login'
 import CssGrid from './screens/components/CssGrid/cssGrid'
+import ChatPanel from './screens/components/chat-panel/ChatPanel'
 ReactDOM.render(
-    <CssGrid />,
+    <ChatPanel 
+    // Data={Data} 
+    />,
   document.getElementById('root')
 );
 
