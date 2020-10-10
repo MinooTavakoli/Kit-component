@@ -5,25 +5,33 @@
     width: 100%;
     display: grid;
     padding: 16px;
-    .chat-dialog-box2 {
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: justify;
-        justify-content: center;
-        padding: 16px;
-        font-size: 14.5px;
-        color: #505050;
-        font-family: IRANSans;
-        box-sizing: border-box;
+    .wrapper {
+        grid-area: box;
+        display: block;
+        justify-self: flex-start;
+        .date {
+            font-size: 12px;
+            font-family: IRANSans;
+            color: rgb(158, 152, 152);
+            float: left;
+        }
+        .chat-dialog-box2 {
+            height: auto;
+            display: flex;
+            text-align: justify;
+            padding: 16px;
+            font-size: 14px;
+            color: #505050;
+            font-family: IRANSans;
+            box-sizing: border-box;
+        }
     }
     &.--chat-dialog-say2 {
-        grid-template-areas: "avatar box" ". date";
+        // grid-template-areas: "avatar box" ". date";
+        grid-template-areas: "avatar box";
         grid-template-columns: 38px 1fr;
-        grid-template-rows: auto 32px;
         box-sizing: border-box;
         .chat-dialog-box2 {
-            grid-area: box;
             background-color: rgb(255, 255, 255);
             border-radius: 40px 40px 0px 40px;
             place-self: start;
@@ -44,14 +52,7 @@
             width: 40px;
             height: 40px;
             background-color: rgb(28, 142, 248);
-            place-self: end;
-        }
-        .date {
-            font-size: 12px;
-            font-family: IRANSans;
-            color: rgb(158, 152, 152);
-            grid-area: date;
-            justify-self: start;
+            place-self: center;
         }
     }
 }

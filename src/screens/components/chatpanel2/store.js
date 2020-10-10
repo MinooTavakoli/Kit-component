@@ -6,11 +6,13 @@ import {
 class Store {
     chat = "";
     list = [
+
         {
             text: 'سلام میخواستم راجع به طلاق مشاوره بگیرم',
             type: 'SAY',
             date: '12 خرداد 1399'
         },
+
         // {
         //     text: 'اسکن سند ازدواج',
         //     type: 'REPLY'

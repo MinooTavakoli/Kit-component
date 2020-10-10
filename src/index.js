@@ -14,7 +14,7 @@ import ChatService from './screens/components/chat-panel/ChatService'
 import Panel from './screens/components/chatpanel2/panel'
 import Grid from './screens/components/CssGrid/Grid'
 ReactDOM.render(
-    <Panel  ChatService={ChatService}
+    <Panel ChatService={ChatService}
     // Data={Data} 
     />,
   document.getElementById('root')
