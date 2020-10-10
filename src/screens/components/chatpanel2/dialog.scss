@@ -1,0 +1,57 @@
+@import "Media.scss";
+
+.chat-dialog-component2 {
+    direction: rtl;
+    width: 100%;
+    display: grid;
+    padding: 16px;
+    .chat-dialog-box2 {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: justify;
+        justify-content: center;
+        padding: 16px;
+        font-size: 14.5px;
+        color: #505050;
+        font-family: IRANSans;
+        box-sizing: border-box;
+    }
+    &.--chat-dialog-say2 {
+        grid-template-areas: "avatar box" ". date";
+        grid-template-columns: 38px 1fr;
+        grid-template-rows: auto 32px;
+        box-sizing: border-box;
+        .chat-dialog-box2 {
+            grid-area: box;
+            background-color: rgb(255, 255, 255);
+            border-radius: 40px 40px 0px 40px;
+            place-self: start;
+            margin-right: 16px;
+        }
+        &.--chat-dialog-reply2 {
+            grid-template-areas: "box avatar";
+            grid-template-columns: 1fr 38px;
+            .chat-dialog-box2 {
+                grid-area: box;
+                background-color: rgb(252, 162, 140);
+                border-radius: 10px;
+            }
+        }
+        .avatar {
+            grid-area: avatar;
+            border-radius: 100px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(28, 142, 248);
+            place-self: end;
+        }
+        .date {
+            font-size: 12px;
+            font-family: IRANSans;
+            color: rgb(158, 152, 152);
+            grid-area: date;
+            justify-self: start;
+        }
+    }
+}

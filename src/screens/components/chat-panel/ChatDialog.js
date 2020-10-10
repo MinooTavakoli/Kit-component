@@ -1,54 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './ChatDialog.scss'
+import {chatStore} from './ChatStore'
+import ChatPanel from './ChatPanel'
 
 export default function ChatDialog(props) {
+
     return (
-        <div dir='rtl' className='chat-dialog-component'>
+        <div dir='rtl' className={'chat-dialog-component ' + (props.type=="REPLY"?'--chat-dialog-reply':'--chat-dialog-say')}>
 
-            <div className='chat-dialog-text'>
-                اگر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                 است می توانید به مجموعه بزرگ
-                 ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                 می دهد که سفارش شما توسط مترجم هم رشته با شما انجام شود.
-                 گر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                 است می توانید به مجموعه بزرگ
-                 ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                 می دهد که سفارش شما توسط مترجم هم رشته با شما انجام شود.
-                 گر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                 است می توانید به مجموعه بزرگ
-                 ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                 می دهد که سفارش شما توسط مترجم هم رشته با شما انجام شود.
-                 گر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                 است می توانید به مجموعه بزرگ
-                 ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                 می دهد که سفارش شما توسط مترجم هم رشته با شما انجام شود.
-                 گر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                 است می توانید به مجموعه بزرگ
-                 ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                 می دهد که سفارش شما توسط مترجم هم رشته با شما انجام شود.
+            <div className='chat-dialog-box'>
+                {props.text}
             </div>
 
-            <div className='chat-dialog-text'>
-                {props.text2}
-            </div>
-
-            <div className='chat-dialog-reply'>
-                {props.text3}
-            </div>
-
-            <div className='chat-dialog-text'>
-                {props.text2}
-            </div>
-
-            <div className='chat-dialog-reply'>
-                {props.text4}
-            </div>
-         
         </div>
     )
 }

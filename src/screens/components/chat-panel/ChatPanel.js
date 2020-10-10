@@ -1,40 +1,36 @@
 import React from 'react'
 import ChatDialog from './ChatDialog'
 import './ChatPanel.scss'
+import ChatService from './ChatService'
+import { observer } from 'mobx-react'
+import ChatStore from './ChatStore'
 
-export default function ChatPanel(props) {
+
+
+// const chatservice = new ChatService ();
+// const data = chatservice.getChats();
+const chatStore = new ChatStore();
+
+function ChatPanel(props) {
+
     return (
         <div className='chat-panel-component'>
 
             <div className='chat-wrapper'>
 
                 <div className='dialog-section'>
-                    <ChatDialog text= {props.text}
-                     
-                     text2='
-                    در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                     می دهد.
-                     '
-
-                     text3='
-                     اگر هدف شما ترجمه متون تخصصی در رشته های مختلف
-                      است می توانید به مجموعه بزرگ
-                      ایرانیان اعتماد کنید. دایره گسترده مترجمین تخصصی 
-                     در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                      می دهد که سفارش شما توسط مترجم هم رشته.
-                      '
-
-                      text4='
-                      در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما
-                       می دهد.دایره گسترده مترجمین تخصصی 
-                       در مجموعه ترجمه تخصصی ایرانیان این اطمینان 
-                       '
-                     />
+                              
+                {
+                    chatStore.chatList.map((item)=>{
+                        return <ChatDialog type={item.type} text={item.text} />
+                    })
+                }
+                       
                 </div>
 
                 <div className='input-section'>
-                    <button onClick={()=>{}} className='send-text-button'>ارسال</button>
-                    <input dir='rtl' type="text" />
+                    <button onClick={()=> chatStore.onSendButtonClick()} className='send-text-button'>ارسال</button>
+                    <input type="text" value={chatStore.chat} onChange={(e) => chatStore.updateChat(e.target.value)} />
                 </div>
 
             </div>
@@ -42,3 +38,4 @@ export default function ChatPanel(props) {
         </div>
     )
 }
+export default observer(ChatPanel)
