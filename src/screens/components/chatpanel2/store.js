@@ -5,18 +5,16 @@ import {
 
 class Store {
     chat = "";
-    list = [
-
-        {
+    list = [{
             text: 'سلام میخواستم راجع به طلاق مشاوره بگیرم',
             type: 'SAY',
             date: '12 خرداد 1399'
         },
-
-        // {
-        //     text: 'اسکن سند ازدواج',
-        //     type: 'REPLY'
-        // },
+        {
+            text: 'اسکن سند ازدواج',
+            type: 'REPLY',
+            date: '12 خرداد 1399'
+        },
     ]
 
     constructor() {
@@ -24,7 +22,12 @@ class Store {
     }
 
     onbtnclick() {
-        this.addlist(this.chat, 'SAY', '12 خرداد 1399' )
+        this.addlist(this.chat, 'SAY', '12 خرداد 1399')
+        this.empty()
+    }
+
+    onbtnclickReplay() {
+        this.addlist(this.chat, 'REPLY', '12 خرداد 1399')
         this.empty()
     }
 

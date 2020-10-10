@@ -26,10 +26,22 @@
             box-sizing: border-box;
         }
     }
+    &.--chat-dialog-reply2 {
+        grid-template-areas: "box avatar";
+        grid-template-columns: auto 38px;
+        box-sizing: border-box;
+        .chat-dialog-box2 {
+            // grid-area: box;
+            background-color: rgb(252, 162, 140);
+            border-radius: 10px;
+            place-self: start;
+            margin-right: 16px;
+        }
+    }
     &.--chat-dialog-say2 {
         // grid-template-areas: "avatar box" ". date";
         grid-template-areas: "avatar box";
-        grid-template-columns: 38px 1fr;
+        grid-template-columns: 38px auto;
         box-sizing: border-box;
         .chat-dialog-box2 {
             background-color: rgb(255, 255, 255);
@@ -37,22 +49,13 @@
             place-self: start;
             margin-right: 16px;
         }
-        &.--chat-dialog-reply2 {
-            grid-template-areas: "box avatar";
-            grid-template-columns: 1fr 38px;
-            .chat-dialog-box2 {
-                grid-area: box;
-                background-color: rgb(252, 162, 140);
-                border-radius: 10px;
-            }
-        }
         .avatar {
             grid-area: avatar;
             border-radius: 100px;
             width: 40px;
             height: 40px;
             background-color: rgb(28, 142, 248);
-            place-self: center;
+            place-self: end;
         }
     }
 }

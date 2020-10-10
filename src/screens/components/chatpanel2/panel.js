@@ -27,7 +27,7 @@ function Panel(props) {
                 <div className='input-section2'>
                     <img onClick={()=> store.onbtnclick()} className='send-text-button2' src={iconsend} alt="" />
                     <input value={store.chat} onChange={(e)=>{store.update(e.target.value)}} dir='rtl' type='text' className='input-text2' placeholder='پیام خود را بنویسید ...' />
-                     <img className='send-text-button2' src={iconplus} alt="" /> 
+                     <img onClick={()=> store.onbtnclickReplay()} className='send-text-button2' src={iconplus} alt="" /> 
                 </div>
 
             </div>
