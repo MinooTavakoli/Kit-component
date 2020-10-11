@@ -1,65 +1,49 @@
 import {
     makeAutoObservable
-} from "mobx";
-
+} from 'mobx'
 
 class ChatStore {
     chat = "";
-    chatList = [
-        {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'SAY'
-        },
-
-        {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'REPLY'
+    chatList = [{
+            text: 'سلام میخواستم راجع به طلاق مشاوره بگیرم',
+            type: 'SAY',
+            date: '12 خرداد 1399'
         },
         {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'SAY'
-        },
-
-        {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'REPLY'
-        },
-        {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'SAY'
-        },
-
-        {
-            text: 'در مجموعه ترجمه تخصصی ایرانیان این اطمینان را به شما می دهد.',
-            type: 'REPLY'
+            text: 'اسکن سند ازدواج',
+            type: 'REPLY',
+            date: '12 خرداد 1399'
         },
     ]
 
+    constructor() {
+        makeAutoObservable(this);
+    }
+
     onSendButtonClick() {
-        this.addtochatlist(this.chat,'SAY')
+        this.addToChatList(this.chat, 'SAY', '12 خرداد 1399')
         this.emptyChatText()
     }
 
-    addtochatlist(text,type) {
-        this.chatList.push({
-            text: text,
-            type: type
-        });
-
+    onReplyButtonClick() {
+        this.addToChatList(this.chat, 'REPLY', '12 خرداد 1399')
+        this.emptyChatText()
     }
 
     emptyChatText() {
         this.chat = ""
     }
 
-    constructor() {
-        makeAutoObservable(this);
+    addToChatList(text, type, date) {
+        this.chatList.push({
+            text: text,
+            type: type,
+            date: date
+        })
     }
 
-    updateChat = (newChat) => {
-        // debugger;
-        this.chat = newChat;
-
+    updateChat = (newchat) => {
+        this.chat = newchat
     }
 }
 

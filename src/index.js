@@ -9,12 +9,13 @@ import Profile from './screens/components/profile/profile'
 import Data from './screens/components/My-Activity/Data-Activity'
 import Login from './screens/components/login/login'
 import CssGrid from './screens/components/CssGrid/cssGrid'
+import ChatService from './screens/components/chat-panel2/ChatService'
 import ChatPanel from './screens/components/chat-panel/ChatPanel'
-import ChatService from './screens/components/chat-panel/ChatService'
-import Panel from './screens/components/chatpanel2/panel'
+import Panel from './screens/components/chat-panel2/ChatPanel'
 import Grid from './screens/components/CssGrid/Grid'
 ReactDOM.render(
-    <Panel ChatService={ChatService}
+    <ChatPanel 
+    // ChatService={ChatService}
     // Data={Data} 
     />,
   document.getElementById('root')
