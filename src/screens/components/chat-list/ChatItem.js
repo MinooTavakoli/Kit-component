@@ -4,7 +4,7 @@ import './ChatItem.scss'
 export default function ChatItem(props) {
     return (
         
-        <div className='chat-item-component '>
+        <div className='chat-item-component' >
             <div className='chat-item-wrapper'>
                 <div className='chat-item-box'>
                     <div className='chat-all'>
@@ -15,8 +15,7 @@ export default function ChatItem(props) {
                         <div className='avatar'></div>
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
        
     )

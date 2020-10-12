@@ -11,15 +11,12 @@ function ChatListPage(props) {
     return (
         <div className='chatList-page-component'>
             <div className='chatList-wrapper'>
-            
                 <div className='title-text'>چت آنلاین شهرداد</div>
-
-                <div className='chatList-section'>
-                    {chatListStore.chatlist.map((item)=>{
-                        return <ChatItem title={item.title} text={item.text} time={item.time} messageCount={item.messageCount} />
-                    })}
-                </div>
-
+                    <div className='chatList-section'>
+                        {chatListStore.chatlist.map((item)=>{
+                            return <ChatItem title={item.title} text={item.text} time={item.time} messageCount={item.messageCount} type={item.type} />
+                        })}
+                    </div>
             </div>
         </div>
     )

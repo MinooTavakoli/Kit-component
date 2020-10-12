@@ -1,5 +1,5 @@
 .chat-item-component {
-    direction: ltr;
+    direction: rtl;
     .chat-item-wrapper {
         // display: block;
         padding: 4px;
@@ -24,12 +24,12 @@
                 width: 100%;
                 .chat-title {
                     grid-area: title;
-                    margin-left: 20px;
+                    margin-right: 20px;
                     font-size: 16px;
                 }
                 .chat-text {
                     grid-area: text;
-                    margin-left: 20px;
+                    margin-right: 20px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -58,7 +58,7 @@
                     height: 50px;
                     background-color: rgb(50, 154, 252);
                     place-self: center;
-                    margin-left: 16px;
+                    margin-right: 16px;
                 }
             }
         }
