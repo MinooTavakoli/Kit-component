@@ -1,0 +1,66 @@
+.chat-item-component {
+    direction: ltr;
+    .chat-item-wrapper {
+        // display: block;
+        padding: 4px;
+        .chat-item-box {
+            height: auto;
+            // display: flex;
+            text-align: justify;
+            padding: 4px;
+            font-family: IRANSans;
+            box-sizing: border-box;
+            place-self: start;
+            .chat-all {
+                display: grid;
+                justify-items: start;
+                grid-template-areas:
+                    "avatar title time"
+                    "avatar text messageCount";
+                grid-template-columns: 48px 1fr 48px;
+                grid-template-rows: 1fr;
+                box-sizing: border-box;
+                border-bottom: 1px solid rgb(221, 221, 221);
+                width: 100%;
+                .chat-title {
+                    grid-area: title;
+                    margin-left: 20px;
+                    font-size: 16px;
+                }
+                .chat-text {
+                    grid-area: text;
+                    margin-left: 20px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 215px;
+                    font-size: 16px;
+                }
+                .chat-time {
+                    grid-area: time;
+                    margin: 4px;
+                }
+                .chat-messageCount {
+                    grid-area: messageCount;
+                    background-color: rgb(172, 168, 168);
+                    margin: 4px;
+                    width: 30px;
+                    border-radius: 20px;
+                    color: #fff;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .avatar {
+                    grid-area: avatar;
+                    border-radius: 100px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(50, 154, 252);
+                    place-self: center;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+}

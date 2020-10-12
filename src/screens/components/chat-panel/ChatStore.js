@@ -21,13 +21,18 @@ class ChatStore {
     }
 
     onSendButtonClick() {
-        this.addToChatList(this.chat, 'SAY', '12 خرداد 1399')
-        this.emptyChatText()
+        if (!this.chat.trim() == '') {
+            this.addToChatList(this.chat, 'SAY', '12 خرداد 1399')
+            this.emptyChatText()
+        }
+
     }
 
     onReplyButtonClick() {
-        this.addToChatList(this.chat, 'REPLY', '12 خرداد 1399')
-        this.emptyChatText()
+        if (!this.chat.trim() == '') {
+            this.addToChatList(this.chat, 'REPLY', '12 خرداد 1399')
+            this.emptyChatText()
+        }
     }
 
     emptyChatText() {

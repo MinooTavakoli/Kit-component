@@ -11,10 +11,11 @@ import Login from './screens/components/login/login'
 import CssGrid from './screens/components/CssGrid/cssGrid'
 import ChatService from './screens/components/chat-panel2/ChatService'
 import ChatPanel from './screens/components/chat-panel/ChatPanel'
-import Panel from './screens/components/chat-panel2/ChatPanel'
 import Grid from './screens/components/CssGrid/Grid'
+import ChatListPage from './screens/components/chat-list/ChatListPage'
+
 ReactDOM.render(
-    <ChatPanel 
+    <ChatListPage 
     // ChatService={ChatService}
     // Data={Data} 
     />,

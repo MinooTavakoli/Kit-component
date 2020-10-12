@@ -1,6 +1,6 @@
 import React from 'react'
 import iconsend from '../../../assets/images/send.svg'
-import iconplus from '../../../assets/images/plus.svg'
+import Attach from '../../../assets/images/Attach.svg'
 import './ChatPanel.scss'
 import ChatDialog from './ChatDialog'
 import ChatStore from './ChatStore'
@@ -24,7 +24,7 @@ function ChatPanel(props) {
                 <div className='input-section'>
                     <img onClick={()=> chatStore.onSendButtonClick()} className='send-text-button' src={iconsend} alt="" />
                     <input value={chatStore.chat} onChange={(e)=>{chatStore.updateChat(e.target.value)}} dir='rtl' type='text' className='input-text' placeholder='پیام خود را بنویسید ...' />
-                     <img onClick={()=> chatStore.onReplyButtonClick()} className='send-text-button' src={iconplus} alt="" /> 
+                    <img onClick={()=> chatStore.onReplyButtonClick()} className='send-text-button' src={Attach} alt="" /> 
                 </div>
 
             </div>

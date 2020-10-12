@@ -9,7 +9,7 @@
     flex-direction: center;
     .chat-wrapper {
         @include large-desktop {
-            width: 80%;
+            width: 1200px;
             height: 80%;
         }
         @include desktop {
@@ -31,39 +31,15 @@
             overflow-y: scroll;
         }
         .input-section {
-            background-color: rgba(229, 226, 226, 0.8);
-            width: 340px;
+            background-color: #fff;
             border-radius: 40px;
-            height: 55px;
+            height: 56px;
             display: flex;
             justify-content: space-around;
             flex-direction: row;
             align-items: center;
-            @include large-desktop {
-                width: 80%;
-                place-self: center;
-                background-color: rgba(229, 226, 226, 0.8);
-            }
-            @include desktop {
-                width: 80%;
-                place-self: center;
-            }
-            @include small-desktop {
-                width: 80%;
-                place-self: center;
-            }
-            @include tablet {
-                width: 80%;
-                place-self: center;
-            }
-            @include mobile {
-                width: 80%;
-                place-self: center;
-            }
-            @include mobile-tablet {
-                width: 80%;
-                place-self: center;
-            }
+            place-self: center;
+            width: calc(100% - 32px);
             .send-text-button {
                 width: 32px;
                 height: 32px;
@@ -73,7 +49,7 @@
             .input-text {
                 height: 40px;
                 border-radius: 40px;
-                background-color: rgba(229, 226, 226, 0.8);
+                background-color: #fff;
                 text-align: right;
                 border: none;
                 font-size: 14px;

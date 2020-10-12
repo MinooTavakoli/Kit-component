@@ -8,12 +8,10 @@
     .chat-dialog-wrapper {
         grid-area: box;
         display: block;
-        justify-self: flex-start;
         .date {
             font-size: 12px;
             font-family: IRANSans;
             color: rgb(158, 152, 152);
-            float: left;
         }
         .chat-dialog-box {
             height: auto;
@@ -24,18 +22,23 @@
             color: #505050;
             font-family: IRANSans;
             box-sizing: border-box;
+            place-self: start;
         }
     }
     &.--chat-dialog-reply {
         grid-template-areas: "box avatar";
         grid-template-columns: auto 38px;
         box-sizing: border-box;
-        .chat-dialog-box {
-            // grid-area: box;
-            background-color: rgb(252, 162, 140);
-            border-radius: 10px;
-            place-self: start;
-            margin-right: 16px;
+        .chat-dialog-wrapper {
+            justify-self: flex-end;
+            .date {
+                float: right;
+            }
+            .chat-dialog-box {
+                background-color: rgb(188, 247, 210);
+                border-radius: 40px 40px 40px 0px;
+                margin-left: 16px;
+            }
         }
     }
     &.--chat-dialog-say {
@@ -43,19 +46,24 @@
         grid-template-areas: "avatar box";
         grid-template-columns: 38px auto;
         box-sizing: border-box;
-        .chat-dialog-box {
-            background-color: rgb(255, 255, 255);
-            border-radius: 40px 40px 0px 40px;
-            place-self: start;
-            margin-right: 16px;
+        .chat-dialog-wrapper {
+            justify-self: flex-start;
+            .date {
+                float: left;
+            }
+            .chat-dialog-box {
+                background-color: rgb(255, 255, 255);
+                border-radius: 40px 40px 0px 40px;
+                margin-right: 16px;
+            }
         }
-        .avatar-icon {
-            grid-area: avatar;
-            border-radius: 100px;
-            width: 40px;
-            height: 40px;
-            background-color: rgb(28, 142, 248);
-            place-self: end;
-        }
+    }
+    .avatar-icon {
+        grid-area: avatar;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(28, 142, 248);
+        place-self: end;
     }
 }
