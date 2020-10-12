@@ -1,0 +1,25 @@
+.item {
+    height: calc(100% - 75px);;
+
+    .item-all {
+        height: 75px;
+        background-color: rgb(113, 185, 252);
+        display: flex;
+    .avatar {
+        grid-area: avatar;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(50, 154, 252);
+        place-self: center;
+        margin: 16px;
+    }
+    .item-title {
+        margin-top: 26px;
+        margin-left: 12px;
+        font-size: 16px;
+        font-family: IRANSans;
+
+    }
+}
+}

@@ -12,9 +12,10 @@ import CssGrid from './screens/components/CssGrid/cssGrid'
 import ChatPanel from './screens/components/chat-panel/ChatPanel'
 import Grid from './screens/components/CssGrid/Grid'
 import ChatListPage from './screens/components/chat-list/ChatListPage'
+import ChatRouter from './screens/components/chat-list/routes/Chat-Router'
 
 ReactDOM.render(
-    <ChatListPage 
+    <ChatRouter 
     // ChatService={ChatService}
     // Data={Data} 
     />,

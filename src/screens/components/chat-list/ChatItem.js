@@ -13,6 +13,7 @@ export default function ChatItem(props) {
                         <div className='chat-time'>{props.time}</div>
                         <div className='chat-messageCount'>{props.messageCount}</div>
                         <div className='avatar'></div>
+                        <div className=''>{props.id}</div>
                     </div>
                 </div>
             </div>  
