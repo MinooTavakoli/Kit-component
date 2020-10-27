@@ -2,7 +2,6 @@ import React from 'react'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import ChatListPage from '../ChatListPage'
 import Item from '../Item'
-import ChatListStore from '../ChatListStore'
 
 export default function ChatRouter() {
     return (

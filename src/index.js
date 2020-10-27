@@ -15,10 +15,10 @@ import ChatListPage from './screens/components/chat-list/ChatListPage'
 import ChatRouter from './screens/components/chat-list/routes/Chat-Router'
 
 ReactDOM.render(
-    <ChatRouter 
-    // ChatService={ChatService}
-    // Data={Data} 
-    />,
+  <Profile
+  // ChatService={ChatService}
+  // Data={Data} 
+  />,
   document.getElementById('root')
 );
 

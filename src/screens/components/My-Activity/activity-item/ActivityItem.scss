@@ -6,30 +6,28 @@
     // margin-bottom: 46px;
     margin-right: 16px;
     font-family: IRANSans;
-        .activity-title {
-            // margin-top: 46px;
-            font-size: 14px ;
+    .activity-title {
+        // margin-top: 46px;
+        font-size: 14px;
+        color: #202124;
+        margin-right: 10px;
+        color: #a9b3c8;
+        &.--active {
             color: #202124;
-            margin-right: 10px;
-            color: #a9b3c8;
-            &.--active {
-            color: #202124
-            }
-            transition: .2s;
         }
-        .activity-count {
-            display: flex;
-            flex-direction: row;
-            margin-right: 12px;
-            margin-top: 12px;
-            font-family: IRANSans;
-            font-size: 20px;
-            font-weight: 700;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.75;
-            letter-spacing: normal;
-        }
-        }
-      
-    
+        transition: 0.2s;
+    }
+    .activity-count {
+        display: flex;
+        flex-direction: row;
+        margin-right: 12px;
+        margin-top: 12px;
+        font-family: IRANSans;
+        font-size: 20px;
+        font-weight: 700;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+    }
+}
