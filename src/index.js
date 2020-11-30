@@ -13,9 +13,10 @@ import ChatPanel from './screens/components/chat-panel/ChatPanel'
 import Grid from './screens/components/CssGrid/Grid'
 import ChatListPage from './screens/components/chat-list/ChatListPage'
 import ChatRouter from './screens/components/chat-list/routes/Chat-Router'
+import Cookie from './screens/components/login/Cookie';
 
 ReactDOM.render(
-  <Profile
+  <MyActivity
   // ChatService={ChatService}
   // Data={Data} 
   />,
